@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap for Mobile first-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap for CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Bootstrap for Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap for Javascript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="goswami.css">
+    <title> Main Page </title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="goswami-index.html">Dr. Araghya Goswami</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Research<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Link 1</a> </li>
+                        <li><a href="goswami-search.html">Search Page</a> </li>
+                        <li><a href="#">Link 2</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#">External Collaborators</a></li>
+                <li><a href="#">Publications-Talks</a></li>
+                <li><a href="teachings.html">Teachings</a></li>
+                <li><a href="#">Hobbies</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="innernav">
+        <form action="database.php" method="POST">
+            <label for="searchselect">Search</label><br>
+            <input class="textbox" name="textbox" type="text" placeholder="Type your search or select a criteria below">
+            <div class="brand"> <label for="searchselect">Brand</label><br>
+                <select multiple class="form-control" name="brand" id="searchselect">
+                  <option value="mi">MI</option>
+                  <option value="samsumng">Samsung</option>
+                  <option>Apple</option>
+                  <option>Redme</option>
+                  <option>Oppo</option>
+                  <option>VIVO</option>
+                </select>
+            </div>
+            <div class="ram"> <label for="searchselect">RAM</label><br>
+                <select multiple class="form-control" id="searchselect">
+                  <option>6GB and Above</option>
+                  <option>4GB</option>
+                  <option>3GB</option>
+                  <option>2GB</option>
+                  <option>1GB</option>
+                  <option>512MB</option>
+                </select>
+            </div>
+            <div class="int-stor"> <label for="searchselect">Internal Storage</label><br>
+                <select multiple class="form-control" id="searchselect">
+                  <option>256GB</option>
+                  <option>128GB</option>
+                  <option>64GB</option>
+                  <option>32GB</option>
+                  <option>16GB</option>
+                  <option>8GB</option>
+                </select>
+            </div>
+            <div class="os"> <label for="searchselect">Operating System</label><br>
+                <select multiple class="form-control" id="searchselect">
+                  <option>Android</option>
+                  <option>Brew</option>
+                  <option>iOS</option>
+                  <option>Linux</option>
+                  <option>Windows</option>
+                </select>
+            </div>
+            <div class="battery"> <label for="searchselect">Battery</label><br>
+                <select multiple class="form-control" id="searchselect">
+                  <option>1000-1999mAh</option>
+                  <option>2000-2999mAh</option>
+                  <option>3000-3999mAh</option>
+                  <option>4000-4999mAh</option>
+                </select>
+            </div>
+            <div class="screen"> <label for="searchselect">Screen Size</label><br>
+                <select multiple class="form-control" id="searchselect">
+                  <option>5.7-5.9 inch</option>
+                  <option>5.5-5.6 inch</option>
+                  <option>5.2-5.4 inch</option>
+                  <option>5-5.1 inch</option>
+                  <option>4.5-4.9 inch</option>
+                </select>
+            </div>
+            <div class="camera"> <label for="searchselect">Primary Camera</label><br>
+                <select multiple class="form-control" id="searchselect">
+                  <option>2-2.9mp</option>
+                  <option>Below 2mp</option>
+                  <option>3-4.9mp</option>
+                  <option>5-7.9mp</option>
+                  <option>8-11.9mp</option>
+                </select>
+            </div>
+            <div class="resolution"> <label for="searchselect">Resolution</label><br>
+                <select multiple class="form-control" id="searchselect">
+                  <option>Full HD</option>
+                  <option>Full HD+</option>
+                  <option>HD</option>
+                  <option>HD+</option>
+                  <option>QHD</option>
+                </select>
+            </div><br>
+            <button type="submit" class="btn btn-primary search">
+                Search
+              </button>
+        </form>
+        <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><b>Contact Information</b></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                    <div class="modal-body">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Name</td>
+                                    <td><input name="name" type="text" placeholder="Name"><br></td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td><input name="email" type="email" placeholder="Email ID"></br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Purpose</td>
+                                    <td><input name="purpose" type="text" placeholder="Purpose"><br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>

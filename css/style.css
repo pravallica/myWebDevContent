@@ -1,0 +1,112 @@
+
+
+/* animation styling */
+@keyframes fadeBounce{
+    /* starting position */
+0%{
+    opacity:0;
+    transform:translateY(-200%); /* Paiki 200% velali */
+}
+/* madyalo, bounce starting position */
+40%{
+    transform: translateY(0);/*dani original postion ki vasthundhi*/
+}
+55%{
+    transform: translateY(-6px);/*paiki oka 6px velli*/
+}
+70%{
+    transform: translateY(0);/*malli original postion ki vasthadhi*/
+}
+85%{
+    opacity:1; /*paina antha blur ga undi, ikada clear avthadhi*/
+    transform: translateY(-3px);/*malli paiki oka 3px velli*/
+}
+/* ending position of whole animation */
+100%{
+    opacity:1;
+    transform: translateY(0);/*dani original postion ki vacheyali*/
+}
+}
+/* end animation styling */
+
+/* star animation start */
+@keyframes slide{
+    
+    100%{
+        transform: translateX(500%); /*star size ki 5 times right side ki ravali i.e end of page ki set chesanu*/
+    }
+}
+/* rotate ayyaka 100% ki velli venakki tiriginattu untundhi,its not neat to view */
+@keyframes slideSpin{
+    50%{
+        transform: translateX(250%) scale(.5); /*ikada 250 is half of 500%, which is half way through;slide madyalo unapudu dani size sagam avthadi, malli 100% ki velpotahdhi*/
+    }
+    75%{
+        transform: translateX(250%) rotate(180deg) scale(.5);
+    }
+    100%{
+        transform: translateX(500%); /*star size ki 5 times right side ki ravali i.e end of page ki set chesanu*/
+    }
+}
+/* final animation of the slide and spin */
+@keyframes slideSpinNeat{
+    50%{
+        transform: translateX(250%) scale(.5); /*ikada 250 is half of 500%, which is half way through;slide madyalo unapudu dani size sagam avthadi, malli 100% ki velpotahdhi*/
+    }
+    75%{
+        transform: translateX(250%) rotate(180deg) scale(.5);
+    }
+    100%{
+        transform: translateX(500%) rotate(180deg); /*star size ki 5 times right side ki ravali i.e end of page ki set chesanu*/
+    }
+}
+/* star animation end */
+
+.box1{
+    opacity: 0;/* use this with animation-fill-mode, so that the content wont disappear after animation*/
+    /* animation-name: fadeBounce;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; uses the 100% animation to use after the animation is done*/
+    animation: fadeBounce 1s forwards;/*short hand for the above three*/
+    margin-top: 50px;
+    height:50px;
+    width:170px;
+    padding: 20px 20px 0px 20px;
+    border:2px solid #d3dee7;
+    margin-bottom: 30px;
+    background-color: #e7eff5;
+    border-radius: 10px; 
+}
+/* this applies to the 2nd child of the row class with class name box1 */
+.boxes :nth-child(2) .box1{
+    animation-delay: .5s
+}
+.boxes :nth-child(3) .box1{
+    animation-delay: 1s
+}
+.boxes :nth-child(4) .box1{
+    animation-delay: 1.5s
+}
+.star,.star1,.star2,.star3
+{
+    width: 15%;
+    height:auto;
+}
+.star{
+animation: slide 2s forwards;/*slide animation ayyi 2s lo 100% position ki vasthadhi*/
+animation-iteration-count: infinite; /*loops on the animation forever*/
+
+}
+.star1{
+    animation: slide 2s forwards;/*slide animation ayyi 2s lo 100% position ki vasthadhi*/
+    animation-iteration-count: infinite; /*loops on the animation forever*/
+    animation-direction: alternate; /*right ki vachinadanni smooth ga left(starting position) ki pampadaniki used*/
+}
+.star2{
+    animation: slideSpin 2s forwards;
+    animation-iteration-count: infinite; /*loops on the animation forever*/
+    animation-direction: alternate; /*right ki vachinadanni smooth ga left(starting position) ki pampadaniki used*/
+}
+.star3{
+    animation: slideSpinNeat 2s infinite alternate forwards;/*shorthand for all 5 properties*/
+}

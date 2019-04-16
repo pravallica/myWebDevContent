@@ -1,0 +1,93 @@
+data.php
+
+<?php
+
+$dbserverName="localhost";
+$dbuserName="root";
+$dbpassword="";
+$dbName="test";
+
+$conn = mysqli_connect($dbserverName,db$userName,db$password,$dbName);
+
+
+insert.php
+
+<?php
+include_once data.php;
+
+$productID=$_POST[prodId];
+$productName=$_POST[prodnName];
+$providerId=$_POST[provId];
+$date=$_POST[date];
+
+
+if(!$conn){
+echo ("Connection Failed:".mysqli_connect_error());
+}
+else
+echo "Connection Successful";
+
+$sql=INSERT INTO product (p_id,name,providerId,date) VALUES ('$productID','$productName','$providerId','$date');
+
+mysqli_query($conn,$sql);
+header("Location: Job.html?Details-Succesfully-Entered);
+
+
+<?php
+
+include_once data.php
+?>
+
+
+<body>
+<?php
+
+$sql="SELECT * FROM product;";
+$result=mysqli_query($conn,$sql);
+$resultCheck= mysqli_num_rows($result);
+
+if ($resultCheck > 0){
+while($row=mysqli_fetch_assoc($result))
+{
+echo $row['pid']."<br>".$row['name'];
+}
+}
+else{
+echo "No results";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

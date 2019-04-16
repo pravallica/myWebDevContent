@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <div id="outer" style="width :100px; height:100px;background-color: green">
+    <div id="inner" style="width :35px; height:35px;background-color: yellow"></div></div>
+</body>
+<script>
+var inner = document.querySelector('#inner');
+var outer = document.querySelector('#outer');
+
+inner.addEventListener('click',innerListener);
+outer.addEventListener('click',outerListener);
+// here event is the object which has all the properties. It is a default object 
+function innerListener(event){
+  console.log('Clicked Inner');
+}
+
+function outerListener(event){
+  console.log('Clicked Outer');
+}
+  </script>
+</html>

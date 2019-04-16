@@ -1,0 +1,243 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(http://fonts.googleapis.com/css?family=Courgette);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,700italic,900,900italic);
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);*/
+/******************** FONT VARIABLES ********************/
+/******************** COLOR VARIABLES ********************/
+/************************* TABLE OF CONTENTS *************************/
+/********** 01. About Author **********/
+/************************* TABLE OF CONTENTS *************************/
+/*************************************************
+01. About Author
+/*************************************************/
+.about-me {
+  margin-bottom: 60px;
+  background: #ffffff;
+  border: 1px solid #fefefe;
+  border-bottom: 1px solid #eeeeee;
+  min-height: 80px;
+  vertical-align: middle;
+  margin-top: -20px;
+  font-family: 'Roboto', sans-serif;
+  z-index: 99999;
+  position: relative;
+}
+.about-me .author-description .image-holder {
+  display: table;
+  width: 100%;
+}
+.about-me .author-description .image-holder img {
+  position: absolute;
+  height: 128px;
+  width: 128px;
+  border: 3px solid #ffffff;
+  margin-top: -48px;
+  float: left;
+}
+.about-me .author-description .description {
+  margin-left: 154px;
+  padding: 14px 0px;
+}
+.about-me .author-description .description h4 {
+  margin: 0px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #333333;
+}
+.about-me .author-description .description p {
+  color: #777777;
+  font-size: 13px;
+  margin-bottom: 0px;
+  line-height: 26px;
+}
+.about-me ul.stats {
+  padding: 0px;
+  margin: 0px;
+  background: green;
+}
+.about-me ul.stats li {
+  background-color: red;
+  text-align: center;
+  padding: 22px 50px;
+  height: 100%;
+}
+.about-me ul.stats li p {
+  margin-bottom: 0px;
+  color: #999999;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700px;
+  display: none;
+}
+.about-me .author-stats .col-md-3 {
+  border-right: 1px solid #eeeeee;
+}
+.about-me .author-stats .col-md-3:first-child {
+  border-left: 1px solid #eeeeee;
+}
+.about-me .author-stats .stats {
+  height: 80px;
+  text-align: center;
+  line-height: 20px;
+  padding: 20px 0px;
+}
+.about-me .author-stats .stats small {
+  color: #999999;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 20px;
+}
+.about-me .author-stats .stats p {
+  color: #333333;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+}
+/*************************************************
+02. contact Widgets
+/*************************************************/
+.about-contact {
+  background-color: #FFFFFF;
+  border: 1px solid #e3e3e3;
+  margin-bottom: 25px;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+.about-contact .author-img {
+  width: 88px;
+  height: 88px;
+  margin: 0 auto;
+}
+.about-contact .author-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.about-contact .author-name {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: capitalize;
+  padding-top: 20px;
+}
+.about-contact .author-country {
+  color: #aaaaaa;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+.about-contact .author-sales {
+  color: #333333;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.about-contact .author-sales span {
+  color: #777777;
+}
+.contact-widget {
+  background-color: #FFFFFF;
+  border: 1px solid #e3e3e3;
+  margin-bottom: 25px;
+  padding: 20px;
+  text-align: center;
+}
+.contact-widget h5 {
+  margin: 0px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #333333;
+  letter-spacing: 1px;
+  line-height: 26px;
+}
+.contact-widget p {
+  color: #777777;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 18px;
+  margin-top: 10px;
+}
+.contact-widget .contact-form-sb .form-group .form-control {
+  background: #fcfcfc;
+  border-radius: 0px;
+  border-color: #e3e3e3;
+  box-shadow: none;
+  height: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  color: #c1c1c1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.contact-widget .contact-form-sb .form-group .form-control.textarea {
+  height: auto;
+}
+.contact-widget .contact-form-sb .form-group .form-control:focus {
+  border-color: #cccccc;
+}
+.contact-widget .contact-form-sb .btn-custom {
+  border-radius: 0px;
+  background: #ee644c;
+  font-size: 12px;
+  line-height: 28px;
+  color: #FFFFFE;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  outline: none;
+  box-shadow: none;
+  border: 0px;
+  padding: 7px 30px;
+  display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+}
+.contact-widget .contact-form-sb .btn-custom:hover {
+  color: #ee644c;
+  border: 2px solid #ee644c;
+  background: #FFFFFF;
+}
+@media screen and (max-width: 1024px) {
+  .about-author {
+    z-index: 1;
+  }
+  .about-author .author-description .description h4 {
+    line-height: 13px;
+    padding-bottom: 8px;
+  }
+  .about-author .author-description .description p {
+    line-height: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .author-stats {
+    margin-top: 26px;
+  }
+  .author-stats .col-md-3 {
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .author-stats .col-md-3:first-child {
+    border-right: 0px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+  }
+}
+@media (max-width: 480px) {
+  .hero-info {
+    z-index: 0 !important;
+  }
+}

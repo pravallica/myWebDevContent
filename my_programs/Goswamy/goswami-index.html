@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap for Mobile first-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap for CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Bootstrap for Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap for Javascript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="goswami.css">
+    <title> Main Page </title>
+</head>
+
+<body>
+    <?php include_once 'database.php'
+?>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Dr. Araghya Goswami</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Research<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Link 1</a> </li>
+                        <li><a href="goswami-search.html">Search Page</a> </li>
+                        <li><a href="#">Link 2</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#">External Collaborators</a></li>
+                <li><a href="#">Publications-Talks</a></li>
+                <li><a href="teachings.html">Teachings</a></li>
+                <li><a href="#">Hobbies</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <p> This area will have the details about whatever is need in the homeoage. Photos or videos etc.</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+body {
+    background-color: white;
+    margin: 0px;
+}
+
+.navbar {
+    height: 52px;
+}
+
+.inner-nav {
+    width: 1130px;
+    margin: 0px auto;
+}
+
+.inner-nav .logo {
+    padding-top: 14px;
+}
+
+.logo,
+.nav-pills {
+    display: inline-block;
+}
+
+.nav-pills ul li {
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.nav-pills {
+    float: right;
+}
+
+.nav-pills ul li a {
+    font-size: 14px;
+    color: #5d6164;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.nav-pills ul li a:hover {
+    color: #2baae1;
+}
+
+.hero-image {
+    height: 364px;
+    background: url(./slider.png)
+}
+
+.cart-btn {
+    background-color: #2baae1;
+    padding: 9px 12px;
+    color: white !important;
+    border-bottom: 3px solid #1f98cc;
+}
