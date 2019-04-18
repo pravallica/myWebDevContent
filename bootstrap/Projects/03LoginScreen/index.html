@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/style.css">
+    <title>Modal</title>
+</head>
+<body>
+    <!-- step:1 Coding the trigger -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Project based approach to learn Modal window</h1>
+                <p class="text-center">
+                    <!-- ee kindha button click chesthey ID lo code chesinattu window fade aypoyi disable avthadi
+                    kindha unna data-target name should match with the ID name  -->
+                    <a href="#" data-target="#login-modal" data-toggle="modal" role="button" class="btn btn-primary btn-lg">Login Here</a>
+                </p>
+            </div>
+        </div>
+    
+    <!-- Step:2 Coding the modal window.First step is to call the class of modal. Second is to add the modal-dialog for the new window -->
+    <div class="modal fade" id="login-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- 2a. modal header div-->
+                <div class="modal-header text-center">
+                    <!-- img-logo will center the image on the modal -->
+                    <img id="img-logo" class="img-thumbnail" src="images/logo.jpg" alt="">
+                </div>
+                <div id="div-forms">
+                    <form>
+                        <!-- 2b. modal body div(helpful to center the inputs) -->
+                        <div class="modal-body">
+                            <div>
+                                <span> Type your email and password here</span>
+                            </div>
+                            <input class="form-control" placeholder="Email" type="text" required>
+                            <input class="form-control" placeholder="password" type="password" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <!-- 2c. modal footer div -->
+                        <div class="modal-footer justify-content-center">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <button class="btn btn-primary btn-lg btn-block" type="submit"> Login </button>
+                                </div>
+                                <div class="col-sm-6">
+                                        <button class="btn btn-primary btn-lg btn-block" type="submit">Signup</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+</body>
+</html>

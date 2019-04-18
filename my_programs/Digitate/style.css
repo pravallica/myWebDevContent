@@ -1,0 +1,23 @@
+.body{
+    margin-top:0px;
+    font-family: 'Arimo', sans-serif;
+}
+
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    float:right;
+    margin: auto 15px;
+    color:"#9b9ea0";
+    
+}
+.logo, .menu{
+    display: inline;
+}
+.logo{
+    padding-right: 20%;
+}
+.name{
+    
+}
