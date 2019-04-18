@@ -1,6 +1,7 @@
 .body{
     margin-top:0px;
     font-family: 'Arimo', sans-serif;
+    letter-spacing: 1px;
 }
 
 .menu ul{
@@ -9,15 +10,150 @@
 .menu ul li{
     float:right;
     margin: auto 15px;
-    color:"#9b9ea0";
-    
+    color:#666768;
+    line-height: auto;
 }
+.menulist .cart {
+    background-color: #2baae1;
+}
+
+.menulist .name{
+    color: #2baae1;
+}
+
 .logo, .menu{
     display: inline;
 }
 .logo{
     padding-right: 20%;
 }
-.name{
+.hero{
+    background: url(./images/slider.png) no-repeat;
+    min-height: 400px;
+    margin-top:50px; 
+}
+.hero h5{
+    color:white;
+    text-align: right;
+    position: absolute;
+    top:80px;
+    right:50px;
+}
+.filter{
+    position: absolute;
+    top: 280px;
+    height:130px;
+    right:0px;
+    margin: 0px;
+    padding: 16px;
+    background-color:#f9fafb;
+}
+.butto{
+width:250px;
+text-align:left;
+}
+.space{
+    padding-left:10px;
+}
+.container .row .fas{
+    color:#666768;
+}
+.container p{
+    color:#666768;
+}
+.list-group{
+    font-size: 15px;
+}
+.card-body{
+    text-align: left;
+    line-height: 15px;
+}
+.list-group-item{
+    font-size: 13px;
     
+}
+.crd ul li .fas, .crd ul li .far{
+    color:#ffd83c !important;
+    font-size:12px;
+    text-align:left;
+}
+.cards{
+    padding-top: 10px;
+}
+.crd ul li{
+    text-align: center;
+}
+.showmore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:35px;
+    letter-spacing: 1px;
+}
+.show{
+    width:210px;
+    background-color:#1f98cc;
+}
+.footer{
+    height:265px;
+    margin-top:35px;
+    background: #353636;
+}
+
+.foot .list-group-item1{
+    color:#9d9ea0;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Arimo', sans-serif;
+}
+.footer .fab{
+    margin-left:12px;
+    font-size:18px;
+}
+.fb{
+    color:#3b5998;
+    background-color: white;
+}
+.twit{
+    color:#55acee;
+    background-color: #fff;
+}
+.gplus{
+    color:#dd4b39;
+    background-color: #fff;
+}
+.linkdin{
+    color:#0976b4;
+    background: #ffff;
+}
+.footer .list-group-item{
+    background-color: #353636;
+    border-top: 1px solid #3f4040;
+    line-height:40px;
+    font-family: 'Arimo', sans-serif;
+    letter-spacing: 1px;
+}
+.spacing{
+   padding-left:60px;
+}
+.list-group-item2{
+    color:#e9e9e9;
+}
+.list-group-item3{
+    color: #9d9ea0;
+    
+}
+.spacingNumber{
+    color:#e9e9e9;
+}
+.spacing1{
+    padding-left:390px;
+}
+
+.bootstrapguru{
+    color: #1f98cc;
+}
+.list-group-item4{
+    text-align: right;
+    color:#e9e9e9;
 }

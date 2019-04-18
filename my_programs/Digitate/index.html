@@ -11,23 +11,302 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <div class="container">
-                <div class="logo">
-                    <img src="logo.png" alt="Logo">
+<div class="container-fluid container-fluid-main">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <div class="logo">
+                <img src="./images/logo.png" alt="Logo">
+            </div>
+            <div class="menu">
+                <ul class="menulist">
+                    <li><i class="fas fa-search"></i></li>
+                    <li> <li class="name">Hello, James</li>
+                    <li><button type="button" class="btn btn-primary btn-sm cart"><i class="fas fa-shopping-cart"></i> 0 Items</button></li>
+                    <li>Contact Us</li>
+                    <li class="dropdown-toggle">Pages </li>
+                    <li>About Us</li>
+                    <li>Home</li>  
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="hero row"> <h5>Top Authors</h5>
+        <div class="col-md-12 filter">
+            <div class="container herocont">
+                <div class="row">
+                    <div class="col-lg-3 cols">
+                        <p> <i class="fas fa-filter"></i><span class="space">Sort By</span></p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-secondary dropdown-toggle butto" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Alphabetical
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 cols">
+                        <p> <i class="fas fa-folder"></i><span class="space">Category</span></p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-secondary dropdown-toggle butto" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Wordpress
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 cols">
+                        <p> <i class="far fa-folder"></i> <span class="space">Sub Category</span></p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-secondary dropdown-toggle butto" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Creative
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 cols">
+                        <p> <i class="fas fa-chevron-left"> <i class="fas fa-chevron-right"></i></i><span class="space">Compatibility</span></p>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="dropdown">
+                                        <button class="btn btn-outline-secondary dropdown-toggle butto" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Woo Commerce
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
                 </div>
-                <div class="menu">
-                    <ul class="menulist">
-                        <li><i class="fas fa-search"></i></li>
-                        <li> <li><button type="button" class="btn btn-outline-primary name">Hello James</button></li>
-                        <li><button type="button" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> 0 Items</button></li>
-                        <li>Contact Us</li>
-                        <li class="dropdown-toggle">Pages </li>
-                        <li>About Us</li>
-                        <li>Home</li>  
-                    </ul>
-                </div>
+            </div>   
         </div>
     </div>
+    <div class="container cards">
+        <div class="row cardsrow">
+            <div class="col-md-4 cardscol">
+                <div class="card crd">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./images/author1.png" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">James Wesley</h5>
+                                <p class="card-text">Canada </p>
+                                <p class="card-text">Senior Author</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">Rating<br>
+                            <i class="fas star fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></li>
+                        <li class="list-group-item">Total Items <br>213</span></li>
+                        <li class="list-group-item">Total Sales <br> 2013</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 cardscol">
+                    <div class="card mb- crd">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="./images/author2.png" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">James Wesley</h5>
+                                    <p class="card-text">Canada </p>
+                                    <p class="card-text">Senior Author</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-horizontal">
+                            <li class="list-group-item">Rating<br>
+                                <i class="fas star fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></li>
+                            <li class="list-group-item">Total Items <br>213</span></li>
+                            <li class="list-group-item">Total Sales <br> 2013</li>
+                        </ul>
+                    </div>
+            </div>    
+            <div class="col-md-4 cardscol">
+                <div class="card mb- crd">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./images/author3.png" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">James Wesley</h5>
+                                <p class="card-text">Canada </p>
+                                <p class="card-text">Senior Author</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">Rating<br>
+                            <i class="fas star fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></li>
+                        <li class="list-group-item">Total Items <br>213</span></li>
+                        <li class="list-group-item">Total Sales <br> 2013</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5 cardscol">
+                <div class="card mb- crd">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./images/author3.png" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">James Wesley</h5>
+                                <p class="card-text">Canada </p>
+                                <p class="card-text">Senior Author</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">Rating<br>
+                            <i class="fas star fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></li>
+                        <li class="list-group-item">Total Items <br>213</span></li>
+                        <li class="list-group-item">Total Sales <br> 2013</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5 cardscol">
+                <div class="card mb- crd">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./images/author1.png" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">James Wesley</h5>
+                                <p class="card-text">Canada </p>
+                                <p class="card-text">Senior Author</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">Rating<br>
+                            <i class="fas star fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></li>
+                        <li class="list-group-item">Total Items <br>213</span></li>
+                        <li class="list-group-item">Total Sales <br> 2013</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5 cardscol">
+                <div class="card mb- crd">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./images/author2.png" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">James Wesley</h5>
+                                <p class="card-text">Canada </p>
+                                <p class="card-text">Senior Author</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">Rating<br>
+                            <i class="fas star fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></li>
+                        <li class="list-group-item">Total Items <br>213</span></li>
+                        <li class="list-group-item">Total Sales <br> 2013</li>
+                    </ul>
+                </div>
+            </div>   
+            <div class="col-md-4 mt-5 cardscol">
+                <div class="card mb- crd">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./images/author2.png" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">James Wesley</h5>
+                                <p class="card-text">Canada </p>
+                                <p class="card-text">Senior Author</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">Rating<br>
+                            <i class="fas star fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></li>
+                        <li class="list-group-item">Total Items <br>213</span></li>
+                        <li class="list-group-item">Total Sales <br> 2013</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5 cardscol">
+                <div class="card mb- crd">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./images/author1.png" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">James Wesley</h5>
+                                <p class="card-text">Canada </p>
+                                <p class="card-text">Senior Author</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">Rating<br>
+                            <i class="fas star fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></li>
+                        <li class="list-group-item">Total Items <br>213</span></li>
+                        <li class="list-group-item">Total Sales <br> 2013</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5 cardscol">
+                <div class="card mb- crd">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./images/author3.png" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">James Wesley</h5>
+                                <p class="card-text">Canada </p>
+                                <p class="card-text">Senior Author</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">Rating<br>
+                            <i class="fas star fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></li>
+                        <li class="list-group-item">Total Items <br>213</span></li>
+                        <li class="list-group-item">Total Sales <br> 2013</li>
+                    </ul>
+                </div>
+            </div>             
+        </div>
+    </div>
+    <div class="container showmore">
+        <button class="btn btn-primary show" type="button">Show More</button>
+    </div>
+    </div>
+    <div class="container-fluid footer">
+        <div class="container foot">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-light"><span class="list-group-item1">Our Social Places: </span><i class="fab fa-facebook-square fb"></i><i class="fab fa-twitter-square twit"></i> <i class="fab fa-google-plus-square gplus"></i> <i class="fab fa-linkedin linkdin"></i><span class="spacing1 list-group-item1 ">Community Member:</span> <span class="spacingNumber">16,597 </span><span class="spacing list-group-item1">User Accounts:</span><span class="spacingNumber">26,597</span></li>
+                <li class="list-group-item list-group-item-light list-group-item2 ">Digitate Community<span class="spacing"> Digitate Blog</span><span class="spacing">Contact Digitate </span><span class="spacing">Digitate Services</span><span class="spacing">About Digitate</span></li>
+                <li class="list-group-item list-group-item-light list-group-item3">Terms & Conditions<span class="spacing">Privacy Policy</span><span class="spacing">Management Terms</span><span class="spacing">Careers</span></li>
+                <li class="list-group-item list-group-item-light list-group-item4">&copy; Copyright By <span class="bootstrapguru">Bootstrap Guru</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
 </body>
 </html>
