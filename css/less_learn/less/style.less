@@ -1,0 +1,65 @@
+
+// Variables
+
+@background-color:#F4F4F4;
+@primary-color: #3b5998;
+@secondary-color: #20B2AA;
+@line-height: 1px + 20px;
+
+//background color marchinapudu text color kuda maradaniki use the below.
+
+.textcolor(@a) when (lightness(@a) >= 50%){
+    color:black;
+}
+
+.textcolor(@a) when (lightness(@a) < 50%){
+    color:white;
+}
+
+body{
+    background-color: @background-color;
+}
+h1,h3{
+    .bordered //using mixins
+}
+p{
+    color:@primary-color;
+    line-height: @line-height;
+}
+.btn{
+    padding: 10px 15px;
+    border:0;
+    .border-radius(12px); //using mixin with parameter
+}
+.btn-primary:extend(.btn){
+    background-color: @secondary-color;
+    .textcolor(@secondary-color); //mixin for text color
+}
+
+
+// mixin
+.bordered{
+    border-top: dotted 1px white;
+    border-bottom: solid 2px white;
+}
+
+//mixins with parameters
+.border-radius(@radius){
+    border-radius:@radius;
+}
+
+//nesting
+ul#menu{//this can be used in .css also
+    list-style: none;
+    background-color: lighten(@secondary-color, 20%); //using functions
+    li{
+      padding:10px 0;
+      a{
+        color:@secondary-color;
+        text-decoration: none;
+        &:hover{ //for hover or any properties like these use &
+            color:white;
+        }
+      }
+    }
+  }
