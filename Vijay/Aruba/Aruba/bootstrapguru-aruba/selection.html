@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aruba Networks</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme Style -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- top-bar -->
+    <div class="top-bar">
+        <div class="container">
+            <a href="#" class="pull-left"><i class="fa fa-caret-left"></i> Quote Summary</a>
+            
+            <ul class="list-inline pull-right">
+                <li><a href="#">Quote Type: End User Name AA000000 <i class="fa fa-chevron-circle-down"></i> </a></li>
+                <li><a href="#"><img src="images/logo.png" alt="" class="logo"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /.top-bar -->
+
+    <!-- content starts -->
+    <div class="container">
+
+        <!-- wizard-links -->
+        <div class="wizard-links">
+            <a href="#" class="pull-left cancel">Cancel</a>
+            <a href="#" class="pull-right next">Next</a>
+        </div>
+        <!-- /.wizard-links -->
+
+        <div class="notification">
+            <div class="alert alert-danger alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>Error:</strong> Field required (1)
+            </div>
+        </div>    
+
+        <div class="page-title">
+            <h1>
+                Product Selection Wizard
+                <span class="pull-right info"><strong>General Questions:</strong> Part 1 of 19</span>
+            </h1>
+        </div>  
+
+        <!-- browse -->
+
+        <!-- /.browse -->
+
+
+        <div class="row">
+            <!-- col-md-8 -->
+            <div class="col-md-8">
+                
+                <ul class="list-group wizard-question one">
+                  <li class="list-group-item">Is the customer based in North America?</li>
+                  <li class="list-group-item"> <input type="radio" class="square-input" name="northAmerica" value="1"> Yes</li>
+                  <li class="list-group-item"> <input type="radio" class="square-input" name="northAmerica" value="0"> No</li>
+                </ul>
+
+                <ul class="list-group wizard-question two">
+                  <li class="list-group-item">Is this a commercial or federal account?</li>
+                  <li class="list-group-item"> <input type="radio" name="federalAccount" class="square-input"  value="1"> Commercial</li>
+                  <li class="list-group-item"> <input type="radio" name="federalAccount" class="square-input"  value="0"> Federal</li>
+                </ul>
+
+                <ul class="list-group wizard-question three">
+                  <li class="list-group-item">How many indoor and outdoor APs to you need?</li>
+                  <li class="list-group-item text-box"> <input type="text" class="form-control" name="yes" class="square-input"></li>
+                </ul>
+
+                <ul class="list-group wizard-question four">
+                  <li class="list-group-item">Are you quoting controllers or controllerless?</li>
+                  <li class="list-group-item"> <input type="radio" name="controllers" class="square-input"  value="1"> Controller</li>
+                  <li class="list-group-item"> <input type="radio" name="controllers" class="square-input"  value="0"> Controllerless</li>
+                </ul>
+
+                <div class="footer-text">
+                    Quoting Document Library and Help
+                </div>
+
+            </div>
+            <!-- /.col-md-8 -->
+
+            <!-- col-md-4 -->
+            <div class="col-md-4">
+             <div class="panel panel-default panel-aruba">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Instructions
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="instructions">
+                            <li>
+                                    The product selection wizard will help you select the right product for your customer's needs.
+                            </li>
+                            <li>
+                                    Answering questions thoroughly will allow you to skip unrelated questions and save time.
+                            </li>
+                            <li>
+                                    Average Completion Time 10 minutes
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="panel-footer">
+                        <span class="text-danger">I Required</span>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+            <!-- /.col-md-4 -->
+        </div>
+        <!-- /.row -->
+
+        <!-- wizard-links -->
+        <div class="wizard-links">
+            <a href="#" class="pull-left cancel">Cancel</a>
+            <a href="#" class="pull-right next">Next</a>
+        </div>
+        <!-- /.wizard-links -->
+
+    </div>
+    <!-- ./content starts -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/icheck.js"></script>
+
+
+    <script>
+    $(document).ready(function(){
+         $('.square-input').iCheck({
+            checkboxClass: 'icheckbox_square-orange',
+            radioClass: 'iradio_square-orange',
+            increaseArea: '10%' // optional
+          });
+    });
+    </script>
+  </body>
+</html>
