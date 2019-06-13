@@ -1,0 +1,135 @@
+/*index.html styling */
+
+.indexbody{
+    background: white url(./images/background.png) no-repeat fixed right;
+    font-family: 'Nunito', sans-serif;
+    background-size: inherit;
+    padding:50px;
+    
+}
+.logo{
+    margin-top: 61px;
+}
+/* textarea */
+.text{
+    margin-top: 92px;
+}
+.text h4{
+    font-size: 40px;
+    color:#030F09;
+    letter-spacing: -0.5px;
+    font-weight: 550;
+}
+.text small{
+    font-size: 14px;
+    color: #606060;
+    margin-top: 8px;
+}
+/* buttons */
+.buttons .btn{
+    width: 239px;
+    height:50px;
+    margin-top:40px;
+    margin-right: 20px;
+}
+.btn-success{
+    background-color: #30BE76;
+}
+.btn-success-outline{
+    background-color: #30BE76;
+}
+/* singup form styling */
+.loginbody{
+    background-image: url(./images/Rectangle1.png),url(./images/spoons.png);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    height:900px;
+}
+.logincard{
+    margin: 165px;
+    box-shadow: 5px 10px #888888;
+}
+.logincard .left{
+    background-image: url(./images/Rectangle.png),url(./images/Group.png);
+    width:456px;
+    height:570px;
+    background-position: right;
+    box-shadow:-2px 4px 10px -2px rgba(212,212,212,0.55);
+
+}
+.logincard .right{
+    width:456px;
+    height:570px;
+background-color: #FEFEFE;
+font-family: 'Nunito', sans-serif;
+padding-top: 60px;
+box-shadow:10px 4px 10px -2px rgba(212,212,212,0.55);
+
+}
+.logincard .left,.right{
+    float:left;
+}
+.logincard .left img{
+    margin: 254px 137px;
+
+}
+.logincard .right h4{
+font-size: 24px;
+font-weight: bold;
+}
+.logincard .right p{
+    font-size: 14px;
+    color:#606060;
+}
+.logincard .right form .form-group label{
+    font-size: 14px;
+    color:#8f8e8e;
+}
+.logincard .right form button{
+    width:325px;
+    height:50px;
+    background-color:#30BE76;
+    margin-left:69px;
+    margin-top:40px;
+}
+.logincard .right a{
+    color:#30BE76;
+}
+.logincard .bottom{
+    margin-top:30px;
+    text-align: center;
+    line-height: 5px;
+}
+
+/* Styling for desktopFeed*/
+.desktopbody{
+    background-color: #F7F8FA;
+}
+
+.container-fluid{
+    background-color: #FFFFFF;
+}
+.feedcontainer{
+    padding-left:65px;
+    padding-right: 81px;
+}
+.navbar-brand{
+    margin-right: 200px;
+}
+.form-inline{
+    margin-right: 200px;
+}
+.navbar form .form-control{
+    width:550px;
+}
+.feednavbar img{
+margin-right: 25px;
+float:right;
+
+}
+.avatar{
+width:36px;
+height:36px;
+}

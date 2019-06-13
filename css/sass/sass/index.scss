@@ -1,0 +1,53 @@
+//partials
+@import 'default';
+
+//variables creation
+$primary-color: yellow;
+$primary-font: sans-serif, 'cursive';
+
+body{
+    background: $primary-color;
+    font-family: $primary-font;
+}
+// Nesting
+.container{
+    width: 100%;
+    height: 100%;
+    nav{
+        ul{
+            li{
+                font-size: 30px;
+            }
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+//Prathidaniki ee transform vadali ante we should repeat kabatti, we will use mixins
+// .transform{
+//     width:150px;
+//     height:80px;
+//     background-color: yellow;
+//     -ms-transform: rotate(20deg) scale(1.5);
+//     -webkit-transform:rotate(20deg) scale(1.5);
+//     transform: rotate(20deg) scale(1.5);
+// }
+
+@mixin transform_Me($prop1,$prop2){
+    width:$prop1;
+    height:$prop2;
+    background-color: yellow;
+    -ms-transform: rotate(20deg) scale(1.5);
+    -webkit-transform:rotate(20deg) scale(1.5);
+    transform: rotate(20deg) scale(1.5);
+}
+
+.transform{
+    @include transform_Me(30px,500px);
+}
+.transform2{
+    @include transform_Me(300px,200px);
+    font-size:30px;
+}
