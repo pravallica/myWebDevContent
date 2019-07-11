@@ -16,7 +16,13 @@ body{
     nav{
         ul{
             li{
-                font-size: 30px;
+                &:nth-child(1){ //this is an exampple for the psudo selector
+                    font-size: 30px;
+                }
+                &:nth-child(2){
+                    font-size: 40px;
+                }
+                font-size: 50px;
             }
         }
         a{
@@ -50,4 +56,30 @@ body{
 .transform2{
     @include transform_Me(300px,200px);
     font-size:30px;
+}
+
+// extend is like inheritenace
+%extend-border{
+    border: 1px solid yellow;
+    padding:10px;
+    color:black;
+}
+.border{
+    @extend %extend-border;
+}
+.border2{
+@extend %extend-border;
+margin:20px;
+}
+//if we only create the extend and dont use it in any class, it will not be shown in the .css file
+
+//Pseudo classes
+.element{
+    a{
+        text-decoration: underline;
+        color:black;
+        &:hover{ // "&" antey it refers to the current class which is the anchor tag here and then select the hover which is the pseudo selector
+color: blue;
+        }
+    }
 }

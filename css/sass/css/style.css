@@ -16,7 +16,13 @@ body {
   height: 100%;
 }
 .container nav ul li {
+  font-size: 50px;
+}
+.container nav ul li:nth-child(1) {
   font-size: 30px;
+}
+.container nav ul li:nth-child(2) {
+  font-size: 40px;
 }
 .container nav a {
   text-decoration: none;
@@ -39,6 +45,24 @@ body {
   -webkit-transform: rotate(20deg) scale(1.5);
   transform: rotate(20deg) scale(1.5);
   font-size: 30px;
+}
+
+.border2, .border {
+  border: 1px solid yellow;
+  padding: 10px;
+  color: black;
+}
+
+.border2 {
+  margin: 20px;
+}
+
+.element a {
+  text-decoration: underline;
+  color: black;
+}
+.element a:hover {
+  color: blue;
 }
 
 /*# sourceMappingURL=style.css.map */
